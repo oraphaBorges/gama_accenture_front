@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+footer{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.flex{
+    display: flex;
+}
+.item-center--right{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.item-center--left{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.card{
+    border: 1px solid rgba(132, 132, 132,0.3);
+    border-radius: 3px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+/* paralax */
+.container-paralax{
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content-paralex--data{
+    color: #000;
+    display: flex;
+    width: 50%;
+    height: 350px;
+    background-color: aliceblue;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+.bg-img--versions--1{
+    background-image: url('https://www.blendit.com/wp-content/uploads/2018/08/low-code-o-que-e-850x300.jpg');
+}
