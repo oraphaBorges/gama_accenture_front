@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="https://kit.fontawesome.com/8ac0ce319f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header id="topo" class="container content-default bg-color--purple text-center">
+        <h2>Iniciando com flex box</h2>
+        <h2>Primeiro elemento</h2>
+    </header>
+    <div id="00" class="container content-default bg-color--pink text-center">
+        <h2>Display flex</h2>
+        <h2>Display flex wrap</h2>
+        <div class="content-flex content-default">
+            <div class="content-default bg-color--purple flex-wrap">
+                <h3>#01</h3>
+            </div>
+            <div class="content-default bg-color--purple flex-wrap">
+                <h3>#02</h3>
+            </div>
+            <div class="content-default bg-color--purple flex-wrap">
+                <h3>#03</h3>
+            </div>
+        </div>
+        <h2>Display: grid: wrap</h2>
+        <div class="content-flex--direction content-default flex-wrap--fluid bg-color--yellow">
+            <h3>@01</h3>
+        </div>
+        <div class="content-flex--direction content-default flex-wrap--fluid bg-color--yellow">
+            <h3>@02</h3>
+        </div>
+        <div class="content-flex--direction content-default flex-wrap--fluid bg-color--yellow">
+            <h3>@03</h3>
+        </div>
+
+        <h2>Display: grid | flex item</h2>
+        <div class="content-default content-flex ">
+            <div class="content-flex--direction flex-item--3 bg-color--blue">
+                <h3>$01</h3>
+            </div>
+            <div class="content-flex--direction flex-item--2 bg-color--blue">
+                <h3>$02</h3>
+            </div>
+            <div class="content-flex--direction flex-item--1 bg-color--blue">
+                <h3>$03</h3>
+            </div>
+        </div>
+    </div> 
+    <div id="01" class="container content-default bg-color--purple text-center">
+        <h2>Display: flex | flex item</h2>
+        <div class="content-flex content-default content-flex--direction">
+            <div class="content-default flex-item--1 bg-color--blue">
+                <h3>*01</h3>
+            </div>
+            <div class="content-default flex-item--2 bg-color--blue">
+                <h3>*02</h3>
+            </div>
+            <div class="content-default flex-item--3 bg-color--blue">
+                <h3>*03</h3>
+            </div>
+        </div>
+        <div>
+            <h2> Display: flex-diretection | felx item</h2>
+            <div class="content-flex content-default content-flex--reverse">
+                <div class="content-default flex-item--1 bg-color--yellow">
+                    <h3>+01</h3>
+                </div>
+                <div class="content-default flex-item--2 bg-color--yellow">
+                    <h3>+02</h3>
+                </div>
+                <div class="content-default flex-item--3 bg-color--yellow">
+                    <h3>+03</h3>
+                </div>
+            </div>
+        </div>
+    </div>       
+    <div id="02" class="container content-default bg-color--pink text-center">
+        <h2> Justify contents</h2>
+        <div class="content-flex content-justify">
+            <div class="content-default content-space--default bg-color--yellow">
+                <h3>Block 01</h3>
+            </div>
+            <div class="content-default content-space--default bg-color--yellow">
+                <h3>Block 02</h3>
+            </div>
+            <div class="content-default content-space--default bg-color--yellow">
+                <h3>Block 03</h3>
+            </div>
+        </div>
+        <h2> Justify contents - between</h2>
+        <div class="content-flex content-justify-between">
+            <div class="content-default content-space--default bg-color--blue">
+                <h3>Block 01</h3>
+            </div>
+            <div class="content-default content-space--default bg-color--blue">
+                <h3>Block 02</h3>
+            </div>
+            <div class="content-default content-space--default bg-color--blue">
+                <h3>Block 03</h3>
+            </div>
+        </div>
+        <h2> Align Itens</h2>
+        <div class="content-flex content-align content-justify-between">
+            <div class="content-default bg-color--yellow">
+                <h3>Info 01</h3>
+                <h3>Info 02</h3>
+                <h3>Info 03</h3>
+            </div>
+            <div class="content-default bg-color--yellow">
+                <h3>Info 04</h3>
+                <h3>Info 05</h3>
+            </div>
+            <div class="content-default bg-color--yellow">
+                <h3>Info 06</h3>
+            </div>
+        </div>
+    </div>
+    <div id="03" class="container-paralax bg-img--versions--1">
+        <div class="container content-paralex--data">
+            <h1>Container with paralex 1</h1>
+            <p>
+                Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Delegadis gente finis, bibendum egestas augue arcu ut est. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
+            </p>
+        </div>
+    </div>
+    <div id="04" class="container-paralax bg-img--versions--2">
+        <div class="container content-paralex--data">
+            <h1>Container with paralex 2</h1>
+            <p>
+                Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Delegadis gente finis, bibendum egestas augue arcu ut est. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
+            </p>
+        </div>
+    </div>
+    <div id="05" class="container-paralax bg-img--versions--3">
+        <div class="container content-paralex--data">
+            <h1>Container with paralex 3</h1>
+            <p>
+                Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Delegadis gente finis, bibendum egestas augue arcu ut est. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
+            </p>
+        </div>
+    </div>
+    
+    <div class="content-left--main">
+        <a href="#top"><i class="fa fa-arrow-circle-up"></i></a>
+        <a href="#00"> <i class="fas fa-globe-africa"></i></a>
+        <a href="#01"> <i class="fas fa-globe-americas"></i></a>
+        <a href="#02"> <i class="fas fa-globe-asia"></i></a>
+        <a href="#03"> <i class="fas fa-globe-europe"></i></a>
+        <a href="#04"> <i class="fas fa-meteor"></i></i></a>
+        <a href="#05"> <i class="fa fa-arrow-circle-down"></i></a>
+    </div>
+    <div class="content-right--main">
+        <a href="#top" class="content-top--buttom"><i class="fa fa-arrow-circle-up"></i></a>
+    </div>
+
+    <footer>
+        <div>
+            <p>© Copyright 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
