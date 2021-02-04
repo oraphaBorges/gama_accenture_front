@@ -168,3 +168,43 @@ p{
     background-color: green;
     transition: 1s;
 }
+
+/* Media Query */
+    /* smart phone*/
+@media screen and (max-width:767px){
+    .container{
+        max-width: 100%;
+    }
+    .flex-wrap{
+        width: auto;
+    }
+    .content-flex{
+        display: block;
+    }
+    .content-left--main{
+        display: flex;
+        bottom: 0;
+        top:auto;
+        border-radius: 15px 15px 0px 0px;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    footer{
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .container{
+        max-width: 100%;
+    }
+    .content-left--main{
+        display: inline;
+        top:0;
+        left: 50%;
+        bottom: auto;
+        border-radius: 15px 15px 0px 0px;
+        transform: translate(-50%,0);
+    }
+}
