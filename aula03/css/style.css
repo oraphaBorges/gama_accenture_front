@@ -37,14 +37,14 @@ p{
 .flex{
     display: flex;
 }
-.item-center--right{
+.item-center{
     display: flex;
     align-items: center;
+}
+.right{
     flex-direction: row-reverse;
 }
-.item-center--left{
-    display: flex;
-    align-items: center;
+.left{
     flex-direction: row;
 }
 .card{
@@ -84,4 +84,21 @@ p{
 }
 .bg-img--versions--1{
     background-image: url('https://www.blendit.com/wp-content/uploads/2018/08/low-code-o-que-e-850x300.jpg');
+}
+
+/* Media Query */
+    /* smart phone*/
+@media screen and (max-width:767px){
+    .flex{
+        display: block;
+    }
+    .right{
+        flex-direction: row;
+    }
+    .left{
+        flex-direction: row-reverse;
+    }
+    .card{
+        margin: 10px;
+    }
 }
