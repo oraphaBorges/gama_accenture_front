@@ -10,29 +10,16 @@
     <title>Chuck Norris Jokes</title>
 </head>
 <body>    
-    <nav id="categories">
-        <li onclick="getJoke('animal')">animal</li>
-        <li onclick="getJoke('career')">career</li>
-        <li onclick="getJoke('dev')">dev</li>
-        <li onclick="getJoke('explicit')">explicit</li>
-        <li onclick="getJoke('fashion')">fashion</li>
-        <li onclick="getJoke('food')">food</li>
-        <li onclick="getJoke('celebrity')">celebrity</li>
-        <li onclick="getJoke('history')">history</li>
-        <li onclick="getJoke('money')">money</li>
-        <li onclick="getJoke('movie')">movie</li>
-        <li onclick="getJoke('music')">music</li>
-        <li onclick="getJoke('political')">political</li>
-        <li onclick="getJoke('religion')">religion</li>
-        <li onclick="getJoke('science')">science</li>
-        <li onclick="getJoke('sport')">sport</li>
-        <li onclick="getJoke('travel')">travel</li>
-    </nav>
-    <div id="root">
-        <div>
-            <img id="avatar" src="" alt="">
-            <p id="joke"></p>
-        </div>
+    <nav id="categories"></nav>
+
+    <form id="search-form" class="search-box">
+        <label for="theme"></label>
+        <input id="theme-input" name="theme" type="text" placeholder="Theme">
+        <button type="submit">search</button>
+    </form>
+
+    <div id="root" class="flex">
+        <div id="loader"></div>
     </div>
 </body>
 <script src="assets/js/app.js"></script>
