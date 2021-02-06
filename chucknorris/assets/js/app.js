@@ -19,7 +19,7 @@ function addJoke(joke){
 }
 
 async function getJoke(category){
-    loader.innerHTML = `<img src="assets/img/loader.gif" >`
+    loader.innerHTML = `<img src="assets/img/loader.gif" alt="loader" >`
     root.innerHTML = ""
     const joke = await getRandomJokeFromCategory(category)
     addJoke(joke)
@@ -61,7 +61,6 @@ async function getRandomJoke(){
         console.log(error);
     }
 }
-
 
 // busca de piada randomica apartir de uma categoria
 async function getRandomJokeFromCategory(category){

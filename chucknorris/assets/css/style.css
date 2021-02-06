@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 body{
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: 'Yusei Magic', sans-serif;
+    background-image: url('/chucknorris/assets/img/bck_chuck.jpg') ;
+    background-position: top;
+    background-repeat: repeat;
+    background-size: contain;
 }
+
 
 li{
     cursor: pointer;
@@ -25,40 +32,46 @@ nav li:hover{
     color: antiquewhite;
     background-color: rgb(183, 26, 26);
 }
-
-
-.flex{
+.joke-flex{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 250px;
-}
-
-#root{
-    opacity: 0.7;
-    background-image: url('/chucknorris/assets/img/bck_chuck.jpg');
-
-    height: 100vh;
-
-    /* Center and scale the image nicely */
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .joke-box{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-
+    text-align: center;
     padding: 25px;
+    margin: 20px;
     background-color: #FFD;
     border: 2px solid black;
     border-radius: 5px;
     color: #f60;
+    width: 45%;
 
     -webkit-box-shadow: 9px 10px 37px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 9px 10px 37px -3px rgba(0,0,0,0.75);
-box-shadow: 9px 10px 37px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 37px -3px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 37px -3px rgba(0,0,0,0.75);
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+    background-color: #FFD;
+}
+.search-box button{
+    color: #FFD;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid rgb(170, 169, 169);
+    background-color: #f60;
+}
+.search-box input{
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(170, 169, 169);
+    border-radius: 15px;
+    width: 250px;
 }
