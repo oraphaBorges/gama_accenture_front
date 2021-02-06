@@ -12,30 +12,22 @@ var formSearch = document.getElementById('search-form')
 
 function addJoke(joke){
     loader = ""
-    root.innerHTML = `<div class="joke-box">
+    root.innerHTML += `<div class="joke-box">
     <img id="avatar" src="${joke.icon_url}" alt="">
     <p id="joke">${joke.value}</p>
     </div>`
 }
 
-formSearch.addEventListener('submit',function(e){
-    e.preventDefault()
-    loader.innerHTML = `<img src="assets/img/loader.gif" >`
-    let query = document.getElementById('theme-input').value
-    let jokes = getJokeByQuery(query)
-    jokes.forEach(joke => {
-        addJoke(joke)
-    })
-})
-
 async function getJoke(category){
     loader.innerHTML = `<img src="assets/img/loader.gif" >`
+    root.innerHTML = ""
     const joke = await getRandomJokeFromCategory(category)
     addJoke(joke)
 
 }
 async function getJoke(){
     loader.innerHTML = `<img src="assets/img/loader.gif" >`
+    root.innerHTML = ""
     const joke = await getRandomJoke()
     addJoke(joke)
 }
@@ -109,11 +101,9 @@ async function builMenu(){
         
         categories.forEach(category => {
             let li = document.createElement('li')
-            // li.onclick = getJoke(category)
-            console.log(category);
-            li.value = category
+            li.setAttribute('value',category)
+            li.setAttribute('onclick',`getJoke('${category}')`)
             li.innerHTML = category
-            li.addEventListener('click',getJoke(category))
             nav.appendChild(li)
         });
         
@@ -121,6 +111,16 @@ async function builMenu(){
         console.log(error)
     }
 }
+
+formSearch.addEventListener('submit',async function(e){
+    e.preventDefault()
+    loader.innerHTML = `<img src="assets/img/loader.gif" >`
+    let query = document.getElementById('theme-input').value
+    let jokes = await getJokeByQuery(query)
+    jokes.result.forEach(joke => {
+        addJoke(joke)
+    })
+})
 
 
 builMenu()
